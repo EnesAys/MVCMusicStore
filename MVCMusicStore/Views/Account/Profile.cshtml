@@ -1,0 +1,25 @@
+﻿@model UserDetail
+
+@{
+    ViewBag.Title = "Profile";
+}
+
+<h2>Profile</h2>
+
+<fieldset>
+    <legend>UserDetail</legend>
+    <p><b>User Name: </b>@Model.UserName</p>
+    <p><b>First Name: </b>@Model.FirstName</p>
+    @if (Model.LastName != null)
+    {
+        <p><b>Last Name: </b>@Model.LastName</p>
+    }
+    <p><b>Email: </b>@Model.Email</p>
+    <p><b>Phone: </b>@Model.Phone</p>
+    <p><b>Address: </b>@Model.Address</p>
+    <p><b>Birth Date: </b>@Model.BirthDate.ToShortDateString()</p>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Home Page", "Index", "Home")
+</p>

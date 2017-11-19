@@ -1,0 +1,47 @@
+﻿@model MVCMusicStore.Models.UserDetail
+
+@{
+    ViewBag.Title = "Login";
+}
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Login</legend>
+
+        <div class="editor-label">
+            User Name
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+
+        <div class="editor-label">
+            Password
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        @if (ViewBag.Error != null)
+        {
+            <div id="error" style="color: red;">@ViewBag.Error</div>
+        }
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Home Page", "Index", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

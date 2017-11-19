@@ -1,0 +1,32 @@
+﻿@model List<CartItem>
+
+@if (Model.Count <= 0)
+{
+    <h2>There is no item in your cart.</h2>
+}
+else
+{
+    <table>
+        <tr>
+            <th>Album Title</th>
+            <th>Count</th>
+            <th>Price</th>
+            <th>SubTotal</th>
+            <th></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Count</td>
+                <td>@item.Price.ToString("C2")</td>
+                <td>@item.SubTotal.ToString("C2")</td>
+                <td>
+                    <a href="javascript:void(0)" onclick="RemoveFromMyCart(@item.Id)">Remove From Cart</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <br />
+    @Html.ActionLink("Checkout", "Checkout", "Cart")
+}

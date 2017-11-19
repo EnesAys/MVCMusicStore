@@ -1,0 +1,40 @@
+﻿@model Tuple<MyCart, UserDetail>
+@{
+    ViewBag.Title = "Checkout";
+}
+
+<h2>Checkout</h2>
+
+<table>
+    <tr>
+        <th>Album Title</th>
+        <th>Count</th>
+        <th>Price</th>
+        <th>SubTotal</th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model.Item1.CartItems)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td>@item.Count</td>
+            <td>@item.Price.ToString("C2")</td>
+            <td>@item.SubTotal.ToString("C2")</td>
+            <td>
+                <a href="javascript:void(0)" onclick="RemoveFromMyCart(@item.Id)">Remove From Cart</a>
+            </td>
+        </tr>
+    }
+</table>
+<br />
+
+<br />
+<p><b>User Name:</b>@Model.Item2.UserName</p>
+<p><b>Email:</b>@Model.Item2.Email</p>
+<p><b>Phone:</b>@Model.Item2.Phone</p>
+<p><b>Address:</b>@Model.Item2.Address</p>
+
+@using (Html.BeginForm())
+{ 
+    <input type="submit" value="Submit Order" />
+}

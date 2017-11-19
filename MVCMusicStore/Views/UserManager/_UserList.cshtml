@@ -1,0 +1,104 @@
+﻿@model IPagedList<UserDetail>
+
+@if (ViewBag.State == "empty")
+{
+    <table>
+        <thead>
+            <tr>
+                <th>There is no user in database.
+                </th>
+            </tr>
+        </thead>
+    </table>
+}
+else
+{ 
+    <table>
+        <thead>
+            <tr>
+                <th>User Name
+                </th>
+                <th>First Name
+                </th>
+                <th>Last Name
+                </th>
+                <th>Email
+                </th>
+                <th>Phone
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="6">
+                    <div class="pagination">
+
+                        @if (Model.HasPreviousPage)
+                        {
+                            <a href="javascript:void(0);" title="First Page" onclick="GetPage(1)">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page" onclick="GetPage(@(Model.PageNumber - 1))">&laquo;Previous</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="First Page">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page">&laquo;Previous</a>
+                        }
+
+                        @for (int i = 1; i < Model.PageCount + 1; i++)
+                        {
+                            if (i == Model.PageNumber)
+                            {
+                            <a href="javascript:void(0);" class="number current" title="@i" onclick="GetPage(@i)">@i</a>
+                                continue;
+                            }
+                            <a href="javascript:void(0);" class="number" onclick="GetPage(@i)" title="@i">@i</a>
+                        }
+
+                        @if (Model.HasNextPage)
+                        {
+                            <a href="javascript:void(0);" title="Next Page" onclick="GetPage(@(Model.PageNumber + 1))">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page" onclick="GetPage(@(Model.PageCount))">Last &raquo;</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="Next Page">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page">Last &raquo;</a>
+                        }
+                    </div>
+                    <div class="clear">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.UserName
+                    </td>
+                    <td>
+                        @item.FirstName
+                    </td>
+                    <td>@item.LastName
+                    </td>
+                    <td>@item.Email
+                    </td>
+                    <td>@item.Phone
+                    </td>
+                    <td>
+                        @if (item.IsLocked)
+                        {
+                            <a href="javascript:void(0);" title="Activate" onclick="ActivateUser(@item.Id)"><img src='@Url.Content("~/Content/resources/images/icons/tick_circle.png")' alt="Activate" /></a> 
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="Ban User" onclick="BanUser(@item.Id)"><img src='@Url.Content("~/Content/resources/images/icons/cross_circle.png")' alt="Ban User" /></a> 
+                        }
+                        <a href="javascript:void(0);" title="Delete" onclick="DeleteUser(@item.Id)"><img src='@Url.Content("~/Content/resources/images/icons/cross.png")' alt="Delete" /></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

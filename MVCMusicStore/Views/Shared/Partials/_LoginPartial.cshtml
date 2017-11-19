@@ -1,0 +1,14 @@
+﻿@if (Request.IsAuthenticated)
+{
+    <li>@Html.ActionLink("Welcome " + User.Identity.Name, "Profile", "Account")</li>
+    <li>@Html.ActionLink("Logout", "Logout", "Account")</li>
+    if (User.IsInRole("admin"))
+    {
+    <li>@Html.ActionLink("Go To Dashboard", "Index", "Admin")</li>    
+    }
+}
+else
+{
+    <li>@Html.ActionLink("Register", "Register", "Account")</li>
+    <li>@Html.ActionLink("Login", "Login", "Account")</li>
+} 

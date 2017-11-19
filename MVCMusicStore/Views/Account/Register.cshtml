@@ -1,0 +1,104 @@
+﻿@model MVCMusicStore.Models.UserDetail
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>New User</legend>
+
+        <div class="editor-label">
+            User Name:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.UserName)
+            @Html.ValidationMessageFor(model => model.UserName)
+        </div>
+
+        <div class="editor-label">
+            Password:
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(model => model.Password)
+            @Html.ValidationMessageFor(model => model.Password)
+        </div>
+
+        <div class="editor-label">
+            Confirm Password:
+        </div>
+        <div class="editor-field">
+            @Html.PasswordFor(model => model.ConfirmPassword)
+            @Html.ValidationMessageFor(model => model.ConfirmPassword)
+        </div>
+
+        <div class="editor-label">
+            First Name:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.FirstName)
+            @Html.ValidationMessageFor(model => model.FirstName)
+        </div>
+
+        <div class="editor-label">
+            Last Name:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.LastName)
+            @Html.ValidationMessageFor(model => model.LastName)
+        </div>
+
+        <div class="editor-label">
+            E-mail:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+
+        <div class="editor-label">
+            Phone:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.Phone)
+            @Html.ValidationMessageFor(model => model.Phone)
+        </div>
+
+        <div class="editor-label">
+            Address:
+        </div>
+        <div class="editor-field">
+            @Html.TextAreaFor(model => model.Address)
+            @Html.ValidationMessageFor(model => model.Address)
+        </div>
+
+        <div class="editor-label">
+            Birth Date:
+        </div>
+        <div class="editor-field">
+            @Html.TextBoxFor(model => model.BirthDate, new { type = "date" })
+            @Html.ValidationMessageFor(model => model.BirthDate)
+        </div>
+        @if (ViewBag.Error != null)
+        {
+            <div id="error" style="color: red;">@ViewBag.Error</div>
+        }
+        <p>
+            <input type="submit" value="Create" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Home Page", "Index", "Home")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

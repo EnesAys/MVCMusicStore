@@ -1,0 +1,46 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="content-box-header">
+    <h3>Manage Orders</h3>
+    <ul class="content-box-tabs">
+        <li><a href="#tab1" id="firstTab" class="default-tab">List</a></li>
+    </ul>
+    <div class="clear">
+    </div>
+</div>
+<div class="content-box-content">
+    <div class="tab-content default-tab" id="tab1">
+        @Html.Action("_OrderList", "OrderManager")
+    </div>
+</div>
+
+<script>
+    function GetPage(page) {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("_OrderList", "OrderManager")',
+            data: { page: page },
+            success: function (data) {
+                $("#tab1").html(data);
+                $("#tab1 table tbody tr").removeClass("alt-row");
+                $("#tab1 table tbody tr:even").addClass("alt-row");
+                $(".pagination a.number").removeClass("current");
+                $(".pagination a[title='" + page + "']").addClass("current");
+            }
+        });
+    }
+
+    function GetOrderDetails(id) {
+        $.ajax({
+            type: "GET",
+            url: '@Url.Action("GetOrderDetails", "OrderManager")',
+            data: { orderId: id },
+            success: function (data) {
+                jQuery.facebox(data);
+            }
+        });
+    }
+</script>

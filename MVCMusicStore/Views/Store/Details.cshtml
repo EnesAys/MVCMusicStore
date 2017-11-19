@@ -1,0 +1,56 @@
+﻿@model Album
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Album: @Model.Title</h2>
+<br />
+<img src='@Url.Content(Model.AlbumArtUrl)'  alt="@Model.Title" width="100" height="75" />
+<br />
+<p>Genre Name: @Model.Genre.Name</p>
+<p>
+    Artis Name: @Model.Artist.Name
+    <br />
+    <div class="rateit" data-rateit-resetable="false" data-productid="@Model.Artist.Id" data-rateit-min="0" data-rateit-max="10" data-rateit-step="1" data-rateit-value="@Model.Artist.Rating"></div>
+</p>
+
+<p>Price: @Model.Price.ToString("C2")</p>
+<input type="submit" name="btnAddToCart" value="Add To Cart" id="btnAddToCart" onclick="AddToMyCart(@Model.Id)" />
+
+@section Scripts{
+    <script src="~/Content/src/jquery.rateit.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".rateit").bind('rated',function (e) {
+                var ri = $(this);
+                var value = ri.rateit('value');
+                var artistId = ri.data('productid');
+                $.ajax({
+                    type:"GET",
+                    url: '@Url.Action("RateIt", "Store")',
+                    data: {vote:value,artistId: artistId},
+                    success: function (data) {
+                        ri.rateit('readonly',true);
+                        alert(data.Success + " You vote " + data.Vote + " for " + data.Name);
+                    }
+                });
+            })   
+        });
+
+        function AddToMyCart(id) {
+            $.ajax({
+                type:"POST",
+                url:'@Url.Action("AddToCart", "Cart")',
+                data: {albumId:id},
+                success:function (data) {
+                    $("#navlist li:nth-child(3)").html(data);
+                }
+            });
+        }
+    </script>
+
+}
+
+@section Styles {
+    <link href="~/Content/src/rateit.css" rel="stylesheet" />
+}

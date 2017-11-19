@@ -1,0 +1,8 @@
+﻿@model List<Genre>
+
+<ul id="categories">
+    @foreach (var item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", "Store", new { genreId = item.Id }, null)</li>
+    }
+</ul>

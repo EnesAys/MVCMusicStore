@@ -1,0 +1,16 @@
+﻿@{
+    ViewBag.Title = "Activation";
+}
+
+<h2>User Activation</h2>
+<div>
+    @if ((bool)ViewBag.IsConfirmed)
+    {
+        <p>Your account activated successfully. </p>
+        <p><a href='@Url.Action("Index", "Home")'>Home Page</a> </p>
+    }
+    else
+    {
+        <p>There is an error to confirm your account. Try again later. </p>
+    }
+</div>

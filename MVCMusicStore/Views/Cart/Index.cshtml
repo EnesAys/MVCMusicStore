@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>My Cart</h2>
+
+<div id="cartItems">
+    @Html.Action("_CartItems", "Cart")
+</div>
+@section Scripts{
+    <script>
+        function RemoveFromMyCart(id) {
+            var result = confirm('Do you want to remove this item from your cart?');
+            if (result) {
+                $.ajax({
+                    type: "GET",
+                    url: '@Url.Action("RemoveFromCart", "Cart")',
+                    data: { albumId: id },
+                    success: function (data) {
+                        $("#navlist li:nth-child(3)").html(data.CartButton);
+                        $("#cartItems").html(data.CartTable);
+                    }
+                });
+            }
+        }
+    </script>
+}

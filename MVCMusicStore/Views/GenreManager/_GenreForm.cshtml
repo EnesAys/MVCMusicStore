@@ -1,0 +1,43 @@
+﻿@model MVCMusicStore.Models.Genre
+<script src="~/Scripts/jquery-1.8.2.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var actionName = $("#formum").attr('action');
+        var pagenumber = $(".pagination a.current").attr("title");
+        $("#formum").attr("action", actionName + "&page=" + pagenumber);
+    });
+</script>
+@using (Ajax.BeginForm((string)ViewBag.Process, "GenreManager", new AjaxOptions
+{
+    HttpMethod = "POST",
+    UpdateTargetId = "tab1",
+    InsertionMode = InsertionMode.Replace,
+    OnSuccess = "DefaultView"
+}, new { id="formum"}))
+{
+    <fieldset>
+        @if (Model != null)
+        {
+            @Html.HiddenFor(model => model.Id)
+        }
+        <p>
+            <label>Genre Name</label>
+            @Html.TextBoxFor(model => model.Name, new { @class = "text-input small-input" })
+            @Html.ValidationMessageFor(model => model.Name)
+        </p>
+        <p>
+            <label>Description</label>
+            @Html.TextAreaFor(model => model.Description, new { @class = "text-input textarea", cols = "79", rows = "5" })
+            @Html.ValidationMessageFor(model => model.Description)
+        </p>
+
+        <p>
+            <input class="button" type="button" value="Back To List" id="btnBackToList" onclick="BackToList()" />
+            <input class="button" type="submit" value="Save" id="btnSave" />
+        </p>
+    </fieldset>
+    <div class="clear">
+    </div>
+}

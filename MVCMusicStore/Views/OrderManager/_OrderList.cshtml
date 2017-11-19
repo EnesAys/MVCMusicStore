@@ -1,0 +1,94 @@
+﻿@model IPagedList<Order>
+
+@if (ViewBag.State == "empty")
+{
+    <table>
+        <thead>
+            <tr>
+                <th>There is no order in database.
+                </th>
+            </tr>
+        </thead>
+    </table>
+}
+else
+{ 
+    <table>
+        <thead>
+            <tr>
+                <th>Order ID
+                </th>
+                <th>User Name
+                </th>
+                <th>Email
+                </th>
+                <th>Address
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5">
+                    <div class="pagination">
+
+                        @if (Model.HasPreviousPage)
+                        {
+                            <a href="javascript:void(0);" title="First Page" onclick="GetPage(1)">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page" onclick="GetPage(@(Model.PageNumber - 1))">&laquo;Previous</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="First Page">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page">&laquo;Previous</a>
+                        }
+
+                        @for (int i = 1; i < Model.PageCount + 1; i++)
+                        {
+                            if (i == Model.PageNumber)
+                            {
+                            <a href="javascript:void(0);" class="number current" title="@i" onclick="GetPage(@i)">@i</a>
+                                continue;
+                            }
+                            <a href="javascript:void(0);" class="number" onclick="GetPage(@i)" title="@i">@i</a>
+                        }
+
+                        @if (Model.HasNextPage)
+                        {
+                            <a href="javascript:void(0);" title="Next Page" onclick="GetPage(@(Model.PageNumber + 1))">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page" onclick="GetPage(@(Model.PageCount))">Last &raquo;</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="Next Page">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page">Last &raquo;</a>
+                        }
+                    </div>
+                    <!-- End .pagination -->
+                    <div class="clear">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        <a href="javascript:void(0);" style="text-decoration:underline;" onclick="GetOrderDetails(@item.Id)">@item.Id</a>
+                    </td>
+                    <td>
+                        @item.UserDetail.UserName
+                    </td>
+                    <td>@item.UserDetail.Email
+                    </td>
+                    <td>@item.UserDetail.Address
+                    </td>
+                    <td><a href="javascript:void(0);" title="Delete" onclick="DeleteGenre(@item.Id)">
+                        <img src='@Url.Content("~/Content/resources/images/icons/cross.png")' alt="Delete" /></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,57 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+<h2>All Albums</h2>
+<ul id="album-list">
+    @Html.Action("_AlbumScrollDownList", "Home")
+</ul>
+<div id="divLoading" style="width: 100%; float: left; margin-top: 10px; text-align: center; background-color: #EBEEE3;">
+    <img src='@Url.Content("~/Content/resources/images/loading.gif")' width="40" height="40"  />
+</div>
+@section Scripts{
+    <script>
+        function AddToMyCart(id) {
+            $.ajax({
+                type: "POST",
+                url: '@Url.Action("AddToCart", "Cart")',
+                data: { albumId: id },
+                success: function (data) {
+                    $("#navlist li:nth-child(3)").html(data);
+                }
+            });
+        }
+
+        var page = 1;
+        var moreDataExists = true;
+        var processing = false;
+        $(window).scroll(function () {
+            //console.log($(window).height() + " + " + $(window).scrollTop() + "(" + ($(window).height() + $(window).scrollTop()) + ") =" + $(document).height());
+            if (moreDataExists) {
+                if ($(window).height() + $(window).scrollTop() >= $(document).height() - 5) {
+                    if (!processing) {
+                        page++;
+                        processing = true;
+
+
+                        $.ajax({
+                            type: "GET",
+                            url: '@Url.Action("_AlbumScrollDownList", "Home")',
+                            data: { page: page },
+                            success: function (data) {
+                                console.log(data.length + " " + moreDataExists);
+                                if (data.length<=0) {
+                                    moreDataExists = false;
+                                    $("#divLoading").css("display", "none");
+                                    return;
+                                }
+                                $("#album-list").append(data);
+                                processing = false;
+                            }
+                        });
+                    }
+                }
+            }
+        });
+    </script>
+}

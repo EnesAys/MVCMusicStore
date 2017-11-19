@@ -1,0 +1,132 @@
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.pdb
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\Antlr3.Runtime.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\EntityFramework.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\PagedList.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Optimization.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Providers.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\WebGrease.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\WebMatrix.Data.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\WebMatrix.WebData.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\PagedList.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\EntityFramework.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\WebMatrix.Data.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\WebMatrix.WebData.xml
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.pdb
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\bin\en-US\MVCMusicStore.resources.dll
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.resources
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.en-US.resources
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csproj.GenerateResource.Cache
+C:\Users\AG\Desktop\Siniflar\YD3-3401\MVC\MVCMusicStore\MVCMusicStore\obj\Debug\en-US\MVCMusicStore.resources.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.dll.config
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.pdb
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\en-US\MVCMusicStore.resources.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\Antlr3.Runtime.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\EntityFramework.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\PagedList.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Optimization.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Providers.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\WebGrease.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\PagedList.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\EntityFramework.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\WebMatrix.Data.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\bin\WebMatrix.WebData.xml
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.resources
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.en-US.resources
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csproj.GenerateResource.Cache
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\en-US\MVCMusicStore.resources.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.dll
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.pdb
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Migrations.InitialCreate.resources
+C:\Users\ayhanguney\Desktop\My.Classes\302 Sabah\DersOrnekleri\13.MVC - Project\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Migrations.b.resources
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.dll.config
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\MVCMusicStore.pdb
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\en-US\MVCMusicStore.resources.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\Antlr3.Runtime.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\EntityFramework.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\EntityFramework.SqlServer.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\Microsoft.Web.Mvc.FixedDisplayModes.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\PagedList.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Optimization.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Providers.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\WebGrease.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\EntityFramework.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\EntityFramework.SqlServer.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\PagedList.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\Newtonsoft.Json.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Net.Http.Formatting.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Http.WebHost.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Mvc.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Razor.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.WebPages.Razor.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\WebMatrix.Data.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\WebMatrix.WebData.xml
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csprojResolveAssemblyReference.cache
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.resources
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Views.Resources.en-US.resources
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.csproj.GenerateResource.Cache
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\en-US\MVCMusicStore.resources.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.pdb
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Migrations.a.resources
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\obj\Debug\MVCMusicStore.Migrations._as.resources
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Helpers.dll
+C:\Users\Wissen\Desktop\MVCMusicStore\MVCMusicStore\bin\System.Web.Helpers.xml

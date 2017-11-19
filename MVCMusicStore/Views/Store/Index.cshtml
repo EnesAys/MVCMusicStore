@@ -1,0 +1,13 @@
+﻿@model List<Genre>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Store Index</h2>
+<p>Selected from @Model.Count genres:</p>
+<ul>
+    @foreach (var item in Model)
+    {
+        <li>@Html.ActionLink(item.Name, "Browse", "Store", new { genreId = item.Id }, null)</li>
+    }
+</ul>

@@ -1,0 +1,93 @@
+﻿@model IPagedList<Genre>
+<p>
+    <input type="button" class="button" value="Create New genre" id="btnNew" onclick="GetForm()" />
+</p>
+@if (ViewBag.State == "empty")
+{
+    <table>
+        <thead>
+            <tr>
+                <th>There is no genre in database.If you want to add new genre use Create New Genre button.
+                </th>
+            </tr>
+        </thead>
+    </table>
+}
+else
+{ 
+    <table>
+        <thead>
+            <tr>
+                <th>Genre Name
+                </th>
+                <th>Description
+                </th>
+                <th>Created Date
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="4">
+                    <div class="pagination">
+
+                        @if (Model.HasPreviousPage)
+                        {
+                            <a href="javascript:void(0);" title="First Page" onclick="GetPage(1)">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page" onclick="GetPage(@(Model.PageNumber - 1))">&laquo;Previous</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="First Page">&laquo; First</a>
+                            <a href="javascript:void(0);" title="Previous Page">&laquo;Previous</a>
+                        }
+
+                        @for (int i = 1; i < Model.PageCount+1; i++)
+                        {
+                            if (i == Model.PageNumber)
+                            {
+                            <a href="javascript:void(0);" class="number current" title="@i" onclick="GetPage(@i)">@i</a>
+                                continue;
+                            }
+                            <a href="javascript:void(0);" class="number" onclick="GetPage(@i)" title="@i">@i</a>
+                        }
+
+                        @if (Model.HasNextPage)
+                        {
+                            <a href="javascript:void(0);" title="Next Page" onclick="GetPage(@(Model.PageNumber + 1))">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page" onclick="GetPage(@(Model.PageCount))">Last &raquo;</a>
+                        }
+                        else
+                        {
+                            <a href="javascript:void(0);" title="Next Page">Next &raquo;</a>
+                            <a href="javascript:void(0);" title="Last Page">Last &raquo;</a>
+                        }
+                    </div>
+                    <!-- End .pagination -->
+                    <div class="clear">
+                    </div>
+                </td>
+            </tr>
+        </tfoot>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Name
+                    </td>
+                    <td>
+                        @item.Description
+                    </td>
+                    <td>@item.CreatedDate.ToShortDateString()
+                    </td>
+                    <td>
+                        <a href="javascript:void(0);" title="Edit" onclick="SendGenre(@item.Id)">
+                            <img src='@Url.Content("~/Content/resources/images/icons/pencil.png")' alt="Edit" /></a> <a href="javascript:void(0);" title="Delete" onclick="DeleteGenre(@item.Id)">
+                                <img src='@Url.Content("~/Content/resources/images/icons/cross.png")' alt="Delete" /></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
